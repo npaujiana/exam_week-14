@@ -7,8 +7,7 @@
     <title>product || exam pauji</title>
 </head>
 <body>
-    a.
-    {{-- <h1>Daftar Produk</h1>
+    <h1>Daftar Produk</h1>
     <table>
         <thead>
             <tr>
@@ -19,8 +18,14 @@
         </thead>
 
         <tbody>
-
+            <?php foreach($products as $product) { ?>
+                <tr>
+                    <td><?=$product['name']?></td>
+                    <td><?=$product['description']?></td>
+                    <td><?=$product['price']?></td>
+                </tr>
+                <?php } ?>
         </tbody>
-    </table> --}}
+    </table>
 </body>
 </html>
